@@ -1,2 +1,2 @@
 #!/bin/bash
-./etc/X11/Xsession
+./etc/X11/Xsession & ~/linlocker
