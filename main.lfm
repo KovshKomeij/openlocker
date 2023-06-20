@@ -1,0 +1,80 @@
+object Form1: TForm1
+  Left = 97
+  Height = 430
+  Top = 140
+  Width = 945
+  Caption = 'OpenLocker'
+  ClientHeight = 430
+  ClientWidth = 945
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.2.0.4'
+  object Label1: TLabel
+    Left = 0
+    Height = 63
+    Top = 0
+    Width = 945
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'Система Заблокирована!'
+    Color = clRed
+    Font.Height = -53
+    Font.Name = 'Sans'
+    ParentFont = False
+    Transparent = False
+  end
+  object Label2: TLabel
+    AnchorSideTop.Control = Label1
+    Left = 0
+    Height = 125
+    Top = 79
+    Width = 945
+    Align = alTop
+    Alignment = taCenter
+    BorderSpacing.Top = 16
+    Caption = 'Для того чтобы разблокировать  систему то надо'#10'позвонить по номеру:'#10'88005553535'#10'Потом вам продиктуют номер и'#10'система будет разблокирована'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 64
+    Top = 366
+    Width = 945
+    Align = alBottom
+    ClientHeight = 64
+    ClientWidth = 945
+    TabOrder = 0
+    object Edit1: TEdit
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Button1
+      Left = 25
+      Height = 26
+      Top = 19
+      Width = 767
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 24
+      EchoMode = emPassword
+      PasswordChar = '*'
+      TabOrder = 0
+    end
+    object Button1: TButton
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 792
+      Height = 25
+      Top = 20
+      Width = 128
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 24
+      Caption = 'Разблокировать'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+  end
+end
