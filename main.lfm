@@ -8,7 +8,7 @@ object Form1: TForm1
   ClientWidth = 945
   OnClose = FormClose
   OnCreate = FormCreate
-  LCLVersion = '2.2.0.4'
+  LCLVersion = '2.2.6.0'
   object Label1: TLabel
     Left = 0
     Height = 63
@@ -20,6 +20,7 @@ object Form1: TForm1
     Color = clRed
     Font.Height = -53
     Font.Name = 'Sans'
+    ParentColor = False
     ParentFont = False
     Transparent = False
   end
@@ -35,6 +36,7 @@ object Form1: TForm1
     Caption = 'Для того чтобы разблокировать  систему то надо'#10'позвонить по номеру:'#10'88005553535'#10'Потом вам продиктуют номер и'#10'система будет разблокирована'
     Font.Height = -21
     Font.Name = 'Sans'
+    ParentColor = False
     ParentFont = False
   end
   object Panel1: TPanel

